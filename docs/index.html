@@ -58,6 +58,14 @@
   .disclaimer { color: var(--muted); font-size: 12px; line-height: 1.5; max-width: 78ch; }
   .wrap { padding: 16px 24px 60px; }
 
+  .originBox { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-top: 10px; }
+  .originBox input[type=text] {
+    flex: 1; min-width: 220px; max-width: 320px; padding: 6px 8px; font: inherit;
+    color: var(--ink); background: var(--panel); border: 1px solid var(--line); border-radius: 6px;
+  }
+  #originStatus { color: var(--muted); font-size: 12px; }
+  #originStatus.err { color: var(--far); }
+
   .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
   .stat {
     background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
@@ -125,7 +133,7 @@
 <body>
 <header>
   <h1>Oferta de plazas 2026/2027 · proximidad a <span id="originName">Gijón</span></h1>
-  <div class="sub">Distancias y tiempos <b>en coche</b> desde Gijón (OSRM / OpenStreetMap), calculados al centro de la localidad.</div>
+  <div class="sub">Distancias y tiempos <b>en coche</b> desde <span id="originName2">Gijón</span> (OSRM / OpenStreetMap), calculados al centro de la localidad. El origen por defecto (Gijón) viene precalculado; cualquier otro origen se calcula en el momento, en tu navegador, contra los servicios públicos de OSRM/Nominatim.</div>
   <div class="banner">
     <span class="pill" id="vintage">datos de —</span>
     <span id="staleWarn" hidden class="pill stale">⚠ estos datos pueden estar obsoletos</span>
@@ -136,6 +144,12 @@
          target="_blank" rel="noopener">Educastur · convocatoria y adjudicación</a>.
       Comprueba siempre los datos en el PDF original antes de solicitar una plaza.
     </span>
+  </div>
+  <div class="originBox">
+    <input type="text" id="fOrigin" placeholder="Cambiar origen: p. ej. Villaviciosa, Oviedo…">
+    <button class="btn" id="bOrigin">Recalcular desde aquí</button>
+    <button class="btn" id="bOriginReset" hidden>Volver a Gijón</button>
+    <span id="originStatus"></span>
   </div>
 </header>
 
@@ -254,6 +268,124 @@
 
   const $ = id => document.getElementById(id);
 
+  // ---- origin override ------------------------------------------------------
+  // Gijón is free: its km/minutes are baked into data.js at build time. Any other
+  // origin is resolved live in the browser (Nominatim geocode + one OSRM table
+  // call covering every localidad at once) and cached in localStorage by name.
+  const GIJON_ORIGIN = Object.assign({}, DATA.origin);
+  const ASTURIAS_VIEWBOX = '-7.20,43.70,-4.45,42.85';
+  const ORIGIN_CACHE_KEY = 'oferta-origin-cache-v1';
+  let overrideMap = null; // "concejo|localidad" -> {km, minutes} | null
+
+  function distKey(r) { return r.concejo + '|' + r.localidad; }
+
+  function effectiveRows() {
+    if (!overrideMap) return rows;
+    return rows.map(r => {
+      const d = overrideMap[distKey(r)];
+      return Object.assign({}, r, d ? { km: d.km, minutes: d.minutes } : { km: null, minutes: null });
+    });
+  }
+
+  function loadOriginCache() {
+    try { return JSON.parse(localStorage.getItem(ORIGIN_CACHE_KEY) || '{}'); }
+    catch (e) { return {}; }
+  }
+  function saveOriginCache(cache) {
+    try { localStorage.setItem(ORIGIN_CACHE_KEY, JSON.stringify(cache)); }
+    catch (e) { /* storage full or disabled — non-fatal, just skip caching */ }
+  }
+
+  async function geocode(query) {
+    const url = 'https://nominatim.openstreetmap.org/search?' + new URLSearchParams({
+      q: query, format: 'json', limit: 1, countrycodes: 'es',
+      viewbox: ASTURIAS_VIEWBOX, bounded: 1,
+    });
+    const res = await fetch(url, { headers: { 'Accept': 'application/json' } });
+    if (!res.ok) throw new Error('geocode-http-' + res.status);
+    const hits = await res.json();
+    if (!hits.length) throw new Error('geocode-empty');
+    return { lat: parseFloat(hits[0].lat), lon: parseFloat(hits[0].lon), name: hits[0].display_name };
+  }
+
+  async function routeTable(origin, destinations) {
+    const coords = [origin.lon + ',' + origin.lat]
+      .concat(destinations.map(d => d.lon + ',' + d.lat)).join(';');
+    const url = 'https://router.project-osrm.org/table/v1/driving/' + coords + '?'
+      + new URLSearchParams({ sources: '0', annotations: 'duration,distance' });
+    const res = await fetch(url);
+    if (!res.ok) throw new Error('route-http-' + res.status);
+    const payload = await res.json();
+    if (payload.code !== 'Ok') throw new Error('route-' + payload.code);
+    const durations = payload.durations[0], distances = payload.distances[0];
+    const map = {};
+    destinations.forEach((d, i) => {
+      const duration = durations[i + 1], distance = distances[i + 1];
+      map[d.key] = duration == null ? null
+        : { minutes: Math.round(duration / 60), km: Math.round(distance / 100) / 10 };
+    });
+    return map;
+  }
+
+  function setOriginStatus(text, isError) {
+    const el = $('originStatus');
+    el.textContent = text;
+    el.classList.toggle('err', !!isError);
+  }
+
+  function applyOrigin(origin, map) {
+    DATA.origin = origin;
+    overrideMap = map;
+    $('originName').textContent = origin.name;
+    $('originName2').textContent = origin.name;
+    $('bOriginReset').hidden = !map;
+    render();
+  }
+
+  async function switchOrigin(query) {
+    const cache = loadOriginCache();
+    const cacheKey = query.trim().toLowerCase();
+    if (cache[cacheKey]) {
+      setOriginStatus('Origen: ' + cache[cacheKey].origin.name + ' (caché)');
+      applyOrigin(cache[cacheKey].origin, cache[cacheKey].map);
+      return;
+    }
+    setOriginStatus('Buscando "' + query + '"…');
+    $('bOrigin').disabled = true;
+    try {
+      const origin = await geocode(query + ', Asturias, España');
+      setOriginStatus('Calculando rutas desde ' + origin.name + '…');
+      const destinations = Object.entries(
+        rows.reduce((acc, r) => {
+          if (r.lat != null) acc[distKey(r)] = { key: distKey(r), lat: r.lat, lon: r.lon };
+          return acc;
+        }, {})
+      ).map(([, v]) => v);
+      const map = await routeTable(origin, destinations);
+      cache[cacheKey] = { origin, map };
+      saveOriginCache(cache);
+      setOriginStatus('Origen: ' + origin.name);
+      applyOrigin(origin, map);
+    } catch (err) {
+      setOriginStatus('No se pudo calcular el origen (' + err.message + ')', true);
+    } finally {
+      $('bOrigin').disabled = false;
+    }
+  }
+
+  $('bOrigin').onclick = () => {
+    const q = $('fOrigin').value.trim();
+    if (q) switchOrigin(q);
+  };
+  $('fOrigin').onkeydown = ev => {
+    if (ev.key === 'Enter') $('bOrigin').click();
+  };
+  $('bOriginReset').onclick = () => {
+    $('fOrigin').value = '';
+    setOriginStatus('');
+    applyOrigin(Object.assign({}, GIJON_ORIGIN), null);
+  };
+
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"]/g,
       c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -275,7 +407,7 @@
 
   function visible() {
     const q = state.q.trim().toLowerCase();
-    return rows.filter(r => {
+    return effectiveRows().filter(r => {
       if (state.esp !== 'all' && (r.cuerpo + '|' + r.especialidad) !== state.esp) return false;
       // Unknown distance is always kept, so a geocoding gap never hides a plaza.
       if (r.minutes != null && r.minutes > effectiveMax()) return false;

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oferta de plazas 2026/2027 — cerca de Gijón</title>
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --panel: #ffffff;
+    --ink: #16191d;
+    --muted: #6b7280;
+    --line: #e3e6ea;
+    --accent: #1c6fd0;
+    --near: #15803d;
+    --mid: #b45309;
+    --far: #b91c1c;
+    --chip: #eef2f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1216;
+      --panel: #171b21;
+      --ink: #e8eaed;
+      --muted: #9aa3ae;
+      --line: #262c34;
+      --accent: #6aa9f0;
+      --near: #4ade80;
+      --mid: #fbbf24;
+      --far: #f87171;
+      --chip: #212832;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 14px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  header {
+    padding: 20px 24px 14px;
+    border-bottom: 1px solid var(--line);
+    background: var(--panel);
+  }
+  h1 { margin: 0 0 4px; font-size: 19px; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 13px; }
+  .banner { margin-top: 10px; display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+  .pill {
+    display: inline-block; padding: 2px 9px; border-radius: 999px; white-space: nowrap;
+    background: var(--chip); border: 1px solid var(--line);
+    font-size: 11.5px; font-weight: 700; letter-spacing: .02em;
+  }
+  .pill.stale { background: #fdf0d5; border-color: #e7c98a; color: #7a4a05; }
+  @media (prefers-color-scheme: dark) {
+    .pill.stale { background: #3a2c10; border-color: #6b5215; color: #f5cf7a; }
+  }
+  .disclaimer { color: var(--muted); font-size: 12px; line-height: 1.5; max-width: 78ch; }
+  .wrap { padding: 16px 24px 60px; }
+
+  .stats { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px; }
+  .stat {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 8px;
+    padding: 9px 14px; min-width: 108px;
+  }
+  .stat b { display: block; font-size: 21px; font-variant-numeric: tabular-nums; }
+  .stat span { color: var(--muted); font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+
+  .filters {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+    padding: 14px 16px; margin-bottom: 14px;
+    display: grid; gap: 14px 20px;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+  .f label { display: block; font-size: 11px; font-weight: 600; color: var(--muted);
+             text-transform: uppercase; letter-spacing: .05em; margin-bottom: 5px; }
+  select, input[type=text] {
+    width: 100%; padding: 6px 8px; font: inherit; color: var(--ink);
+    background: var(--bg); border: 1px solid var(--line); border-radius: 6px;
+  }
+  input[type=range] { width: 100%; accent-color: var(--accent); }
+  .rangeval { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .seg { display: flex; border: 1px solid var(--line); border-radius: 6px; overflow: hidden; }
+  .seg button {
+    flex: 1; padding: 6px 4px; font: inherit; font-size: 12.5px; cursor: pointer;
+    background: var(--bg); color: var(--muted); border: 0; border-right: 1px solid var(--line);
+  }
+  .seg button:last-child { border-right: 0; }
+  .seg button[aria-pressed=true] { background: var(--accent); color: #fff; font-weight: 600; }
+
+  .actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+  .btn {
+    padding: 6px 12px; font: inherit; font-size: 13px; cursor: pointer;
+    background: var(--panel); color: var(--ink);
+    border: 1px solid var(--line); border-radius: 6px;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .count { color: var(--muted); margin-left: auto; }
+
+  .tablewrap { overflow-x: auto; background: var(--panel);
+               border: 1px solid var(--line); border-radius: 10px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { padding: 7px 10px; text-align: left; border-bottom: 1px solid var(--line);
+           white-space: nowrap; }
+  th { position: sticky; top: 0; background: var(--panel); cursor: pointer;
+       font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
+       color: var(--muted); user-select: none; }
+  th:hover { color: var(--accent); }
+  th .arrow { opacity: .5; font-size: 9px; }
+  tbody tr:hover { background: var(--chip); }
+  td.num { text-align: right; font-variant-numeric: tabular-nums; }
+  .near { color: var(--near); font-weight: 600; }
+  .mid  { color: var(--mid);  font-weight: 600; }
+  .far  { color: var(--far);  font-weight: 600; }
+  .centre { white-space: normal; min-width: 210px; }
+  .chip { display: inline-block; padding: 1px 6px; border-radius: 4px;
+          background: var(--chip); font-size: 11.5px; font-weight: 600; }
+  .yes { color: var(--near); font-weight: 700; }
+  .no  { color: var(--muted); }
+  a { color: var(--accent); }
+  .note { color: var(--muted); font-size: 12px; margin-top: 14px; line-height: 1.6; }
+  .empty { padding: 34px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <h1>Oferta de plazas 2026/2027 · proximidad a <span id="originName">Gijón</span></h1>
+  <div class="sub">Distancias y tiempos <b>en coche</b> desde Gijón (OSRM / OpenStreetMap), calculados al centro de la localidad.</div>
+  <div class="banner">
+    <span class="pill" id="vintage">datos de —</span>
+    <span id="staleWarn" hidden class="pill stale">⚠ estos datos pueden estar obsoletos</span>
+    <span class="disclaimer">
+      Herramienta <b>no oficial</b>, hecha para uso personal. La única fuente válida es la
+      convocatoria de la Consejería de Educación:
+      <a href="https://www.educastur.es/profesorado/funcion-publica-interina/convocatoria-adjudicacion"
+         target="_blank" rel="noopener">Educastur · convocatoria y adjudicación</a>.
+      Comprueba siempre los datos en el PDF original antes de solicitar una plaza.
+    </span>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="stats">
+    <div class="stat"><b id="sPlazas">—</b><span>plazas</span></div>
+    <div class="stat"><b id="sCentros">—</b><span>centros</span></div>
+    <div class="stat"><b id="sLocal">—</b><span>localidades</span></div>
+    <div class="stat"><b id="sMin">—</b><span>más cercana</span></div>
+  </div>
+
+  <div class="filters">
+    <div class="f">
+      <label for="fEsp">Especialidad</label>
+      <select id="fEsp"></select>
+    </div>
+
+    <div class="f">
+      <label for="fMin">Tiempo en coche máx. · <span class="rangeval" id="fMinVal">90 min</span></label>
+      <input type="range" id="fMin" min="5" max="150" step="5" value="90">
+    </div>
+
+    <div class="f">
+      <label>Vacante (V)</label>
+      <div class="seg" id="fVac">
+        <button data-v="all" aria-pressed="true">Todas</button>
+        <button data-v="yes" aria-pressed="false">Sólo V</button>
+        <button data-v="no" aria-pressed="false">Sin V</button>
+      </div>
+    </div>
+
+    <div class="f">
+      <label>Itinerante (Iti)</label>
+      <div class="seg" id="fIti">
+        <button data-v="all" aria-pressed="true">Todas</button>
+        <button data-v="no" aria-pressed="false">No (N)</button>
+        <button data-v="yes" aria-pressed="false">Sí (S)</button>
+      </div>
+    </div>
+
+    <div class="f">
+      <label>Jornada</label>
+      <div class="seg" id="fJor">
+        <button data-v="all" aria-pressed="true">Todas</button>
+        <button data-v="full" aria-pressed="false">Completa</button>
+        <button data-v="J" aria-pressed="false">J</button>
+        <button data-v="H" aria-pressed="false">H</button>
+      </div>
+    </div>
+
+    <div class="f">
+      <label for="fQ">Buscar centro / localidad / concejo</label>
+      <input type="text" id="fQ" placeholder="p. ej. Villaviciosa, C.P. …">
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" id="bReset">Limpiar filtros</button>
+    <button class="btn" id="bCsv">Exportar CSV</button>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div class="tablewrap">
+    <table>
+      <thead><tr id="head"></tr></thead>
+      <tbody id="body"></tbody>
+    </table>
+    <div class="empty" id="empty" hidden>Ninguna plaza cumple estos filtros.</div>
+  </div>
+
+  <p class="note">
+    <b>Códigos.</b> <b>V</b> en la columna de tipo marca vacante; otros códigos (JA, KA, HA, Z, IA) y el blanco
+    corresponden a otros tipos de plaza. <b>Iti</b>: S = itinerante, N = no.
+    <b>Jornada</b>: en blanco = jornada completa, <b>J</b> = media jornada, <b>H</b> = media jornada por horas.
+    Esta lectura de J/H proviene de guías de interinos, no del propio PDF — confírmala en la convocatoria.
+    <b>Función</b> 1–4 = bilingüe (1 francés, 2 inglés, 3 alemán, 4 italiano).
+    <br>
+    <b>Distancias.</b> Al centro de la localidad, no al edificio del colegio; en un C.R.A. las aulas pueden
+    estar en varios pueblos. Verifica siempre la ruta real antes de decidir.
+    <span id="unlocated"></span>
+  </p>
+</div>
+
+<script src="data.js"></script>
+<script>
+(function () {
+  const DATA = window.OFERTA;
+  const rows = DATA.rows;
+
+  const COLS = [
+    { key: 'minutes',  label: 'Min',         cls: 'num', fmt: r => timeCell(r) },
+    { key: 'km',       label: 'Km',          cls: 'num', fmt: r => r.km == null ? '—' : r.km.toFixed(1) },
+    { key: 'localidad',label: 'Localidad',   fmt: r => esc(r.localidad) },
+    { key: 'concejo',  label: 'Concejo',     fmt: r => esc(r.concejo) },
+    { key: 'centre_name', label: 'Centro',   cls: 'centre', fmt: r => esc(r.centre_name) },
+    { key: 'vacante',  label: 'V',           fmt: r => r.vacante ? '<span class="yes">V</span>'
+                                                    : (r.tipo ? '<span class="chip">' + esc(r.tipo) + '</span>'
+                                                              : '<span class="no">—</span>') },
+    { key: 'itinerante', label: 'Iti',       fmt: r => r.itinerante ? '<span class="chip">S</span>'
+                                                                   : '<span class="no">N</span>' },
+    { key: 'jornada',  label: 'Jornada',     fmt: r => r.jornada ? '<span class="chip">' + r.jornada + '</span>'
+                                                                : '<span class="no">completa</span>' },
+    { key: 'funcion_bilingue', label: 'Bil.', fmt: r => r.funcion_bilingue
+                                                ? '<span class="chip">' + BIL[r.funcion_bilingue] + '</span>'
+                                                : '<span class="no">—</span>' },
+    { key: 'codigo',   label: 'Código',      fmt: r => esc(r.codigo) },
+    { key: 'ruta',     label: 'Ruta',        sortable: false, fmt: r => r.lat == null ? ''
+        : '<a target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1'
+          + '&origin=' + DATA.origin.lat + ',' + DATA.origin.lon
+          + '&destination=' + r.lat + ',' + r.lon + '&travelmode=driving">mapa</a>' },
+  ];
+  const BIL = { '1': 'FR', '2': 'EN', '3': 'DE', '4': 'IT' };
+
+  const state = { esp: '0597|031', maxMin: 90, vac: 'all', iti: 'all', jor: 'all', q: '',
+                  sort: 'minutes', dir: 1 };
+
+  const $ = id => document.getElementById(id);
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g,
+      c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  }
+
+  function timeCell(r) {
+    if (r.minutes == null) return '<span class="no">?</span>';
+    const cls = r.minutes <= 30 ? 'near' : r.minutes <= 60 ? 'mid' : 'far';
+    return '<span class="' + cls + '">' + r.minutes + '</span>';
+  }
+
+  // ---- filters -------------------------------------------------------------
+  // The slider's top position reads "sin límite", so it must not filter at all.
+  // The furthest plaza in the 2026/27 oferta is 154 min away (Ibias).
+  const SLIDER_MAX = 150;
+  function effectiveMax() {
+    return state.maxMin >= SLIDER_MAX ? Infinity : state.maxMin;
+  }
+
+  function visible() {
+    const q = state.q.trim().toLowerCase();
+    return rows.filter(r => {
+      if (state.esp !== 'all' && (r.cuerpo + '|' + r.especialidad) !== state.esp) return false;
+      // Unknown distance is always kept, so a geocoding gap never hides a plaza.
+      if (r.minutes != null && r.minutes > effectiveMax()) return false;
+      if (state.vac === 'yes' && !r.vacante) return false;
+      if (state.vac === 'no' && r.vacante) return false;
+      if (state.iti === 'yes' && !r.itinerante) return false;
+      if (state.iti === 'no' && r.itinerante) return false;
+      if (state.jor === 'full' && r.jornada) return false;
+      if (state.jor === 'J' && r.jornada !== 'J') return false;
+      if (state.jor === 'H' && r.jornada !== 'H') return false;
+      if (q && !(r.centre_name + ' ' + r.localidad + ' ' + r.concejo).toLowerCase().includes(q))
+        return false;
+      return true;
+    });
+  }
+
+  function sorted(list) {
+    const key = state.sort, dir = state.dir;
+    return list.slice().sort((a, b) => {
+      let x = a[key], y = b[key];
+      if (typeof x === 'boolean') { x = x ? 0 : 1; y = y ? 0 : 1; }
+      // Nulls sort last regardless of direction.
+      if (x == null && y == null) return 0;
+      if (x == null) return 1;
+      if (y == null) return -1;
+      if (typeof x === 'number' && typeof y === 'number') return (x - y) * dir;
+      return String(x).localeCompare(String(y), 'es') * dir;
+    });
+  }
+
+  // ---- render --------------------------------------------------------------
+  function renderHead() {
+    $('head').innerHTML = COLS.map(c => {
+      const active = state.sort === c.key;
+      const arrow = active ? ' <span class="arrow">' + (state.dir === 1 ? '▲' : '▼') + '</span>' : '';
+      return '<th data-key="' + c.key + '"' + (c.sortable === false ? ' style="cursor:default"' : '')
+             + '>' + c.label + arrow + '</th>';
+    }).join('');
+    $('head').querySelectorAll('th').forEach(th => {
+      const key = th.dataset.key;
+      if (COLS.find(c => c.key === key).sortable === false) return;
+      th.onclick = () => {
+        if (state.sort === key) state.dir = -state.dir;
+        else { state.sort = key; state.dir = 1; }
+        render();
+      };
+    });
+  }
+
+  function render() {
+    const list = sorted(visible());
+    $('body').innerHTML = list.map(r =>
+      '<tr>' + COLS.map(c =>
+        '<td' + (c.cls ? ' class="' + c.cls + '"' : '') + '>' + c.fmt(r) + '</td>'
+      ).join('') + '</tr>').join('');
+    $('empty').hidden = list.length > 0;
+
+    const withTime = list.filter(r => r.minutes != null);
+    $('sPlazas').textContent = list.length;
+    $('sCentros').textContent = new Set(list.map(r => r.centre_code)).size;
+    $('sLocal').textContent = new Set(list.map(r => r.concejo + '|' + r.localidad)).size;
+    $('sMin').textContent = withTime.length
+      ? Math.min.apply(null, withTime.map(r => r.minutes)) + ' min' : '—';
+    $('count').textContent = list.length + ' de ' + rows.length + ' plazas';
+    renderHead();
+    window.__visible = list;
+  }
+
+  // ---- wiring --------------------------------------------------------------
+  const espSel = $('fEsp');
+  espSel.innerHTML = '<option value="all">Todas las especialidades</option>'
+    + DATA.especialidades.map(e =>
+        '<option value="' + e.cuerpo + '|' + e.especialidad + '">'
+        + esc(e.nombre) + ' · ' + e.cuerpo + ' ' + e.especialidad
+        + ' (' + e.count + ')</option>').join('');
+  espSel.value = state.esp;
+  espSel.onchange = () => { state.esp = espSel.value; render(); };
+
+  const minSlider = $('fMin');
+  minSlider.oninput = () => {
+    state.maxMin = +minSlider.value;
+    $('fMinVal').textContent = state.maxMin >= 150 ? 'sin límite' : state.maxMin + ' min';
+    render();
+  };
+
+  function seg(id, field) {
+    const box = $(id);
+    box.onclick = ev => {
+      const btn = ev.target.closest('button');
+      if (!btn) return;
+      state[field] = btn.dataset.v;
+      box.querySelectorAll('button').forEach(b =>
+        b.setAttribute('aria-pressed', String(b === btn)));
+      render();
+    };
+  }
+  seg('fVac', 'vac');
+  seg('fIti', 'iti');
+  seg('fJor', 'jor');
+
+  let debounce;
+  $('fQ').oninput = ev => {
+    clearTimeout(debounce);
+    debounce = setTimeout(() => { state.q = ev.target.value; render(); }, 150);
+  };
+
+  $('bReset').onclick = () => {
+    Object.assign(state, { esp: '0597|031', maxMin: 90, vac: 'all', iti: 'all',
+                           jor: 'all', q: '', sort: 'minutes', dir: 1 });
+    espSel.value = state.esp;
+    minSlider.value = 90;
+    $('fMinVal').textContent = '90 min';
+    $('fQ').value = '';
+    ['fVac', 'fIti', 'fJor'].forEach(id =>
+      $(id).querySelectorAll('button').forEach((b, i) =>
+        b.setAttribute('aria-pressed', String(i === 0))));
+    render();
+  };
+
+  $('bCsv').onclick = () => {
+    const cols = ['minutes', 'km', 'localidad', 'concejo', 'centre_name', 'centre_code',
+                  'tipo', 'vacante', 'itinerante', 'jornada', 'funcion_bilingue',
+                  'especialidad_extra', 'codigo', 'nombre'];
+    const cell = v => {
+      const s = v == null ? '' : String(v);
+      return /[",;\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+    };
+    const csv = [cols.join(';')]
+      .concat((window.__visible || []).map(r => cols.map(c => cell(r[c])).join(';')))
+      .join('\n');
+    const url = URL.createObjectURL(new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8' }));
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'oferta-filtrada.csv';
+    a.click();
+    URL.revokeObjectURL(url);
+  };
+
+  $('originName').textContent = DATA.origin.name;
+
+  // The oferta is republished regularly, so a visitor arriving months later must
+  // be told the vintage of what they are looking at rather than have to guess.
+  const STALE_AFTER_DAYS = 30;
+  const meta = DATA.meta || {};
+  if (meta.source_date) {
+    const stamped = new Date(meta.source_date + 'T00:00:00');
+    const days = Math.floor((Date.now() - stamped) / 86400000);
+    $('vintage').textContent = 'datos de ' + stamped.toLocaleDateString('es-ES',
+      { day: 'numeric', month: 'long', year: 'numeric' });
+    $('vintage').title = (meta.source_file || '') + ' · ' + (meta.pages || '?') + ' páginas';
+    if (days > STALE_AFTER_DAYS) {
+      $('staleWarn').hidden = false;
+      $('staleWarn').textContent = '⚠ publicados hace ' + days
+        + ' días — es muy probable que ya no estén vigentes';
+    }
+  } else {
+    $('vintage').textContent = 'fecha de los datos desconocida';
+  }
+  if (DATA.unlocated.length) {
+    $('unlocated').innerHTML = '<br><b>Sin geolocalizar (' + DATA.unlocated.length
+      + '), se muestran siempre:</b> ' + esc(DATA.unlocated.join(', ')) + '.';
+  }
+  render();
+})();
+</script>
+</body>
+</html>

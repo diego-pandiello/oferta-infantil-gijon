@@ -1,0 +1,1368 @@
+{
+ "origin": {
+  "name": "Gijón",
+  "lat": 43.5322,
+  "lon": -5.6611
+ },
+ "places": {
+  "ALLANDE|BERDUCEDO": {
+   "concejo": "ALLANDE",
+   "localidad": "BERDUCEDO",
+   "lat": 43.2454063,
+   "lon": -6.7793352,
+   "display_name": "Berducedo, Allande, Asturias / Asturies, España",
+   "km": 153.3,
+   "minutes": 129
+  },
+  "ALLANDE|POLA DE ALLANDE": {
+   "concejo": "ALLANDE",
+   "localidad": "POLA DE ALLANDE",
+   "lat": 43.2777948,
+   "lon": -6.6348221,
+   "display_name": "Pola de Allande, Allande, Asturias / Asturies, España",
+   "km": 129.7,
+   "minutes": 117
+  },
+  "ALLER|BELLO": {
+   "concejo": "ALLER",
+   "localidad": "BELLO",
+   "lat": 43.1400706,
+   "lon": -5.6114709,
+   "display_name": "Beyo, Aller, Asturias / Asturies, España",
+   "km": 63.2,
+   "minutes": 50
+  },
+  "ALLER|CABAÑAQUINTA": {
+   "concejo": "ALLER",
+   "localidad": "CABAÑAQUINTA",
+   "lat": 43.1524069,
+   "lon": -5.6257746,
+   "display_name": "Cabanaquinta / Cabañaquinta, Aller, Asturias / Asturies, 33686, España",
+   "km": 60.6,
+   "minutes": 52
+  },
+  "ALLER|CABORANA": {
+   "concejo": "ALLER",
+   "localidad": "CABORANA",
+   "lat": 43.1760209,
+   "lon": -5.7548516,
+   "display_name": "Caborana, Carretera de Ujo a Cabañaquinta, La Teyera, El Cantiquín, Caborana, Morea / Moreda, Aller, Asturias / Asturies, 33684, España",
+   "km": 47.2,
+   "minutes": 35
+  },
+  "ALLER|ESCOBIO(EL)": {
+   "concejo": "ALLER",
+   "localidad": "ESCOBIO(EL)",
+   "lat": 43.1658131,
+   "lon": -5.6812032,
+   "display_name": "L'Escuyu, Piñeres, Aller, Asturias / Asturies, 33677, España",
+   "km": 54.6,
+   "minutes": 42
+  },
+  "ALLER|FELECHOSA": {
+   "concejo": "ALLER",
+   "localidad": "FELECHOSA",
+   "lat": 43.1034069,
+   "lon": -5.5080515,
+   "display_name": "Felechosa, El Pino, Aller, Asturias / Asturies, 33688, España",
+   "km": 71.5,
+   "minutes": 58
+  },
+  "ALLER|MOREDA": {
+   "concejo": "ALLER",
+   "localidad": "MOREDA",
+   "lat": 43.1706329,
+   "lon": -5.7419089,
+   "display_name": "Moreda, Calle de la Estación, La Casanueva, Sotiellu, Morea / Moreda, Aller, Asturias / Asturies, 33675, España",
+   "km": 48.5,
+   "minutes": 37
+  },
+  "ALLER|OYANCO": {
+   "concejo": "ALLER",
+   "localidad": "OYANCO",
+   "lat": 43.167403,
+   "lon": -5.723453,
+   "display_name": "L'Oyanco, Morea / Moreda, Aller, Asturias / Asturies, 33679, España",
+   "km": 50.9,
+   "minutes": 39
+  },
+  "AVILES|AVILES": {
+   "concejo": "AVILES",
+   "localidad": "AVILES",
+   "lat": 43.5555299,
+   "lon": -5.9222186,
+   "display_name": "Avilés, Asturias / Asturies, España",
+   "km": 27.4,
+   "minutes": 26
+  },
+  "BELMONTE DE MIRANDA|BELMONTE": {
+   "concejo": "BELMONTE DE MIRANDA",
+   "localidad": "BELMONTE",
+   "lat": 43.2898321,
+   "lon": -6.2381031,
+   "display_name": "Belmonte / Balmonte, Belmonte de Miranda, Asturias / Asturies, 33830, España",
+   "km": 80.6,
+   "minutes": 70
+  },
+  "BIMENES|MARTIMPORRA": {
+   "concejo": "BIMENES",
+   "localidad": "MARTIMPORRA",
+   "lat": 43.3307543,
+   "lon": -5.5662624,
+   "display_name": "Martimporra, Bimenes, Asturias / Asturies, 33527, España",
+   "km": 34.3,
+   "minutes": 29
+  },
+  "BOAL|BOAL": {
+   "concejo": "BOAL",
+   "localidad": "BOAL",
+   "lat": 43.4102403,
+   "lon": -6.8351539,
+   "display_name": "Boal, Asturias / Asturies, España",
+   "km": 129.4,
+   "minutes": 95
+  },
+  "CABRALES|ARENAS (LAS)": {
+   "concejo": "CABRALES",
+   "localidad": "ARENAS (LAS)",
+   "lat": 43.3033792,
+   "lon": -4.8147149,
+   "display_name": "Arenas, Cabrales, Asturias / Asturies, España",
+   "km": 105.0,
+   "minutes": 84
+  },
+  "CANDAMO|GRULLOS": {
+   "concejo": "CANDAMO",
+   "localidad": "GRULLOS",
+   "lat": 43.4342813,
+   "lon": -6.0615193,
+   "display_name": "Grullos, Candamo, Asturias / Asturies, 33828, España",
+   "km": 47.1,
+   "minutes": 41
+  },
+  "CANGAS DE ONIS|CANGAS DE ONIS": {
+   "concejo": "CANGAS DE ONIS",
+   "localidad": "CANGAS DE ONIS",
+   "lat": 43.3136138,
+   "lon": -5.0658503,
+   "display_name": "Cangas de Onís, Asturias / Asturies, España",
+   "km": 80.2,
+   "minutes": 72
+  },
+  "CANGAS DEL NARCEA|BIMEDA": {
+   "concejo": "CANGAS DEL NARCEA",
+   "localidad": "BIMEDA",
+   "lat": 43.0941666,
+   "lon": -6.5268484,
+   "display_name": "Bimeda, Cangas del Narcea, Asturias / Asturies, España",
+   "km": 131.4,
+   "minutes": 111
+  },
+  "CANGAS DEL NARCEA|BRUELLES": {
+   "concejo": "CANGAS DEL NARCEA",
+   "localidad": "BRUELLES",
+   "lat": 43.2411418,
+   "lon": -6.442045,
+   "display_name": "Brueḷḷes, Cangas del Narcea, Asturias / Asturies, España",
+   "km": 112.2,
+   "minutes": 95
+  },
+  "CANGAS DEL NARCEA|CANGAS DEL NARCEA": {
+   "concejo": "CANGAS DEL NARCEA",
+   "localidad": "CANGAS DEL NARCEA",
+   "lat": 43.1161349,
+   "lon": -6.5646596,
+   "display_name": "Cangas del Narcea, Asturias / Asturies, España",
+   "km": 131.5,
+   "minutes": 113
+  },
+  "CANGAS DEL NARCEA|LIMES": {
+   "concejo": "CANGAS DEL NARCEA",
+   "localidad": "LIMES",
+   "lat": 43.1449143,
+   "lon": -6.5232358,
+   "display_name": "Ḷḷumés, Cangas del Narcea, Asturias / Asturies, España",
+   "km": 126.4,
+   "minutes": 108
+  },
+  "CANGAS DEL NARCEA|LLANO": {
+   "concejo": "CANGAS DEL NARCEA",
+   "localidad": "LLANO",
+   "lat": 43.0994015,
+   "lon": -6.6175815,
+   "display_name": "Llano de Cruces, Cibuyu, Cangas del Narcea, Asturias / Asturies, España",
+   "km": 136.7,
+   "minutes": 125
+  },
+  "CANGAS DEL NARCEA|OBANCA": {
+   "concejo": "CANGAS DEL NARCEA",
+   "localidad": "OBANCA",
+   "lat": 43.1843262,
+   "lon": -6.5601119,
+   "display_name": "Santa Marina, Cangas del Narcea, Asturias / Asturies, España",
+   "km": 122.4,
+   "minutes": 104
+  },
+  "CANGAS DEL NARCEA|VEGA DE RENGOS": {
+   "concejo": "CANGAS DEL NARCEA",
+   "localidad": "VEGA DE RENGOS",
+   "lat": 43.0292414,
+   "lon": -6.6250389,
+   "display_name": "Veiga de Rengos, Cangas del Narcea, Asturias / Asturies, 33811, España",
+   "km": 140.5,
+   "minutes": 117
+  },
+  "CARAVIA|PRADO": {
+   "concejo": "CARAVIA",
+   "localidad": "PRADO",
+   "lat": 43.4626201,
+   "lon": -5.1870052,
+   "display_name": "Prado, Caravia, Asturias / Asturies, 33344, España",
+   "km": 51.5,
+   "minutes": 39
+  },
+  "CARREÑO|CANDAS": {
+   "concejo": "CARREÑO",
+   "localidad": "CANDAS",
+   "lat": 43.5845843,
+   "lon": -5.7726773,
+   "display_name": "Candás, Calle La Estación, La Estación, Candás, Carreño, Asturias / Asturies, 33430, España",
+   "km": 15.6,
+   "minutes": 17
+  },
+  "CARREÑO|MONTE(EL)": {
+   "concejo": "CARREÑO",
+   "localidad": "MONTE(EL)",
+   "lat": 43.5461148,
+   "lon": -5.733872,
+   "display_name": "El Monte, Prevera, Carreño, Asturias / Asturies, 33691, España",
+   "km": 9.3,
+   "minutes": 11
+  },
+  "CARREÑO|REBOLLADA": {
+   "concejo": "CARREÑO",
+   "localidad": "REBOLLADA",
+   "lat": 43.5500607,
+   "lon": -5.7890635,
+   "display_name": "La Rebollada, Quimarán / Guimarán, Carreño, Asturias / Asturies, 33438, España",
+   "km": 13.6,
+   "minutes": 15
+  },
+  "CASO|CAMPO DE CASO": {
+   "concejo": "CASO",
+   "localidad": "CAMPO DE CASO",
+   "lat": 43.1824824,
+   "lon": -5.3443749,
+   "display_name": "El Campu, Caso, Asturias / Asturies, 33990, España",
+   "km": 70.0,
+   "minutes": 59
+  },
+  "CASTRILLON|CUADRO(EL)": {
+   "concejo": "CASTRILLON",
+   "localidad": "CUADRO(EL)",
+   "lat": 43.5256023,
+   "lon": -5.9800721,
+   "display_name": "El Cuadru, Piarnu, Castrillón, Asturias / Asturies, 33411, España",
+   "km": 33.6,
+   "minutes": 28
+  },
+  "CASTRILLON|PIEDRAS BLANCAS": {
+   "concejo": "CASTRILLON",
+   "localidad": "PIEDRAS BLANCAS",
+   "lat": 43.5564615,
+   "lon": -5.9754922,
+   "display_name": "Piedras Blancas, Calle La Estación, Varboniel, Laspra, Castrillón, Asturias / Asturies, 33450, España",
+   "km": 32.1,
+   "minutes": 28
+  },
+  "CASTRILLON|RAICES NUEVO": {
+   "concejo": "CASTRILLON",
+   "localidad": "RAICES NUEVO",
+   "lat": 43.5743258,
+   "lon": -5.9421331,
+   "display_name": "Raíces Nuevo / La Fundición, Raíces-La Cruz d'Illes, Castrillón, Asturias / Asturies, 33405, España",
+   "km": 29.2,
+   "minutes": 26
+  },
+  "CASTRILLON|SALINAS": {
+   "concejo": "CASTRILLON",
+   "localidad": "SALINAS",
+   "lat": 43.5704021,
+   "lon": -5.956571,
+   "display_name": "Salinas, Calle el Agüil, Salinas, Piedrasblancas, Castrillón, Asturias / Asturies, 33405, España",
+   "km": 31.8,
+   "minutes": 27
+  },
+  "CASTROPOL|CASTROPOL": {
+   "concejo": "CASTROPOL",
+   "localidad": "CASTROPOL",
+   "lat": 43.4666077,
+   "lon": -6.9745589,
+   "display_name": "Castropol, Asturias / Asturies, España",
+   "km": 143.2,
+   "minutes": 118
+  },
+  "CASTROPOL|FIGUERAS": {
+   "concejo": "CASTROPOL",
+   "localidad": "FIGUERAS",
+   "lat": 43.5405944,
+   "lon": -7.0229853,
+   "display_name": "As Figueiras, Castropol, Asturias / Asturies, España",
+   "km": 125.8,
+   "minutes": 84
+  },
+  "COAÑA|JARRIO": {
+   "concejo": "COAÑA",
+   "localidad": "JARRIO",
+   "lat": 43.5395137,
+   "lon": -6.7447188,
+   "display_name": "Xarrio, Folgueiras, Coaña, Asturias / Asturies, 33719, España",
+   "km": 103.8,
+   "minutes": 70
+  },
+  "COLUNGA|COLUNGA": {
+   "concejo": "COLUNGA",
+   "localidad": "COLUNGA",
+   "lat": 43.4851194,
+   "lon": -5.2706728,
+   "display_name": "Colunga, Asturias / Asturies, España",
+   "km": 45.6,
+   "minutes": 35
+  },
+  "COLUNGA|LASTRES": {
+   "concejo": "COLUNGA",
+   "localidad": "LASTRES",
+   "lat": 43.5148479,
+   "lon": -5.2927562,
+   "display_name": "Llastres, Colunga, Asturias / Asturies, 33330, España",
+   "km": 40.7,
+   "minutes": 35
+  },
+  "COLUNGA|LUCES": {
+   "concejo": "COLUNGA",
+   "localidad": "LUCES",
+   "lat": 43.5167352,
+   "lon": -5.2894753,
+   "display_name": "Lluces, Llastres, Colunga, Asturias / Asturies, 33330, España",
+   "km": 40.7,
+   "minutes": 33
+  },
+  "CORVERA DE ASTURIAS|CAMPOS(LOS)": {
+   "concejo": "CORVERA DE ASTURIAS",
+   "localidad": "CAMPOS(LOS)",
+   "lat": 43.5370422,
+   "lon": -5.8853569,
+   "display_name": "Los Campos, Calle María Josefa Canellada, Santa Cruz, Los Campos, Corvera de Asturias, Asturias / Asturies, 33416, España",
+   "km": 24.7,
+   "minutes": 24
+  },
+  "CORVERA DE ASTURIAS|CANCIENES": {
+   "concejo": "CORVERA DE ASTURIAS",
+   "localidad": "CANCIENES",
+   "lat": 43.507205,
+   "lon": -5.8693759,
+   "display_name": "Cancienes, Carretera de la Chusca, El Cabañón, Cancienes, Corvera de Asturias, Asturias / Asturies, 33406, España",
+   "km": 22.5,
+   "minutes": 23
+  },
+  "CORVERA DE ASTURIAS|VEGAS (LAS)": {
+   "concejo": "CORVERA DE ASTURIAS",
+   "localidad": "VEGAS (LAS)",
+   "lat": 43.5358112,
+   "lon": -5.9003638,
+   "display_name": "Las Vegas / Les Vegues, Corvera de Asturias, Asturias / Asturies, 33406, España",
+   "km": 27.6,
+   "minutes": 23
+  },
+  "CUDILLERO|CUDILLERO": {
+   "concejo": "CUDILLERO",
+   "localidad": "CUDILLERO",
+   "lat": 43.5433575,
+   "lon": -6.1936313,
+   "display_name": "Cudillero, Asturias / Asturies, España",
+   "km": 58.4,
+   "minutes": 61
+  },
+  "CUDILLERO|PITO(EL)": {
+   "concejo": "CUDILLERO",
+   "localidad": "PITO(EL)",
+   "lat": 43.5468482,
+   "lon": -6.1433381,
+   "display_name": "El Pito - Piñera, Camino El Centenal, Piñera, Cudillero, Asturias / Asturies, 33154, España",
+   "km": 49.9,
+   "minutes": 37
+  },
+  "CUDILLERO|RIEGO ARRIBA": {
+   "concejo": "CUDILLERO",
+   "localidad": "RIEGO ARRIBA",
+   "lat": 43.5739743,
+   "lon": -6.2351806,
+   "display_name": "Rieguarriba, Oviñana, Cudillero, Asturias / Asturies, 33156, España",
+   "km": 59.1,
+   "minutes": 42
+  },
+  "CUDILLERO|SOTO DE LUIÑA": {
+   "concejo": "CUDILLERO",
+   "localidad": "SOTO DE LUIÑA",
+   "lat": 43.5596553,
+   "lon": -6.2345691,
+   "display_name": "Soto de Luiña, CU-7, Troncéu, Soto de Luiña, Arcayana, Cudillero, Asturias / Asturies, 33156, España",
+   "km": 59.9,
+   "minutes": 42
+  },
+  "DEGAÑA|CERREDO": {
+   "concejo": "DEGAÑA",
+   "localidad": "CERREDO",
+   "lat": 42.9447656,
+   "lon": -6.4814109,
+   "display_name": "Zarréu, Degaña, Asturias / Asturies, España",
+   "km": 142.3,
+   "minutes": 119
+  },
+  "FRANCO(EL)|CARIDAD(LA)": {
+   "concejo": "FRANCO(EL)",
+   "localidad": "CARIDAD(LA)",
+   "lat": 43.5509962,
+   "lon": -6.8289768,
+   "display_name": "Plaza de España, El Trigal, A Caridá, El Franco, Asturias / Asturies, 33746, España",
+   "km": 109.0,
+   "minutes": 73
+  },
+  "FRANCO(EL)|VALDEPARES": {
+   "concejo": "FRANCO(EL)",
+   "localidad": "VALDEPARES",
+   "lat": 43.5564421,
+   "lon": -6.8582962,
+   "display_name": "Valdepares, El Franco, Asturias / Asturies, 33746, España",
+   "km": 111.9,
+   "minutes": 75
+  },
+  "GIJON|CIMADEVILLA": {
+   "concejo": "GIJON",
+   "localidad": "CIMADEVILLA",
+   "lat": 43.5471213,
+   "lon": -5.6630773,
+   "display_name": "Cimavilla, Gijón / Xixón, Gijón, Asturias / Asturies, España",
+   "km": 3.1,
+   "minutes": 6
+  },
+  "GIJON|GIJON": {
+   "concejo": "GIJON",
+   "localidad": "GIJON",
+   "lat": 43.5449422,
+   "lon": -5.66275,
+   "display_name": "Gijón, Asturias / Asturies, España",
+   "km": 2.4,
+   "minutes": 4
+  },
+  "GIJON|MONTEANA": {
+   "concejo": "GIJON",
+   "localidad": "MONTEANA",
+   "lat": 43.5208229,
+   "lon": -5.7462507,
+   "display_name": "Monteana, Carretera de Veriña a San Andrés, La Cruz, Fresno, Gijón, Asturias / Asturies, 33691, España",
+   "km": 10.7,
+   "minutes": 17
+  },
+  "GIJON|REBOLLADA": {
+   "concejo": "GIJON",
+   "localidad": "REBOLLADA",
+   "lat": 43.4933236,
+   "lon": -5.7283732,
+   "display_name": "Camín de La Rebollada a Suañe, Caraveo, L'Abadía Cenero, Gijón, Asturias / Asturies, 33392, España",
+   "km": 9.7,
+   "minutes": 14
+  },
+  "GIJON|VEGA(LA)": {
+   "concejo": "GIJON",
+   "localidad": "VEGA(LA)",
+   "lat": 43.5025606,
+   "lon": -5.7838995,
+   "display_name": "La Vega, Serín, Gijón, Asturias / Asturies, 33480, España",
+   "km": 18.8,
+   "minutes": 18
+  },
+  "GOZON|LUANCO": {
+   "concejo": "GOZON",
+   "localidad": "LUANCO",
+   "lat": 43.6208278,
+   "lon": -5.7962974,
+   "display_name": "Lluanco / Luanco, Gozón, Asturias / Asturies, 33440, España",
+   "km": 21.2,
+   "minutes": 24
+  },
+  "GOZON|QUINTANA(LA)": {
+   "concejo": "GOZON",
+   "localidad": "QUINTANA(LA)",
+   "lat": 43.6347558,
+   "lon": -5.81847,
+   "display_name": "La Quintana, Bañugues, Gozón, Asturias / Asturies, 33448, España",
+   "km": 23.4,
+   "minutes": 26
+  },
+  "GOZON|VALLE(EL)": {
+   "concejo": "GOZON",
+   "localidad": "VALLE(EL)",
+   "lat": 43.5869362,
+   "lon": -5.8802314,
+   "display_name": "El Valle, Santiao d'Ambiedes, Gozón, Asturias / Asturies, 33468, España",
+   "km": 31.0,
+   "minutes": 28
+  },
+  "GRADO|CUETO": {
+   "concejo": "GRADO",
+   "localidad": "CUETO",
+   "lat": 43.3643802,
+   "lon": -6.0517915,
+   "display_name": "Cima el Cueto, El Mirín d'Abaxu, La Mata, Grado, Asturias / Asturies, 33820, España",
+   "km": 57.0,
+   "minutes": 47
+  },
+  "GRADO|GRADO": {
+   "concejo": "GRADO",
+   "localidad": "GRADO",
+   "lat": 43.2980596,
+   "lon": -6.1471901,
+   "display_name": "Grado, Asturias / Asturies, España",
+   "km": 75.4,
+   "minutes": 72
+  },
+  "GRANDAS DE SALIME|GRANDAS": {
+   "concejo": "GRANDAS DE SALIME",
+   "localidad": "GRANDAS",
+   "lat": 43.2058557,
+   "lon": -6.8901281,
+   "display_name": "Grandas de Salime, Asturias / Asturies, España",
+   "km": 172.2,
+   "minutes": 136
+  },
+  "IBIAS|LUIÑA": {
+   "concejo": "IBIAS",
+   "localidad": "LUIÑA",
+   "lat": 42.9207168,
+   "lon": -6.7650696,
+   "display_name": "Luiña, Tormaleo, Ibias, Asturias / Asturies, España",
+   "km": 173.9,
+   "minutes": 152
+  },
+  "IBIAS|SAN ANTOLIN": {
+   "concejo": "IBIAS",
+   "localidad": "SAN ANTOLIN",
+   "lat": 43.0439179,
+   "lon": -6.8822313,
+   "display_name": "San Antolín de Ibias, Ibias, Asturias / Asturies, 33810, España",
+   "km": 169.6,
+   "minutes": 154
+  },
+  "ILLANO|ILLANO": {
+   "concejo": "ILLANO",
+   "localidad": "ILLANO",
+   "lat": 43.3378558,
+   "lon": -6.8514234,
+   "display_name": "Illano, Asturias / Asturies, España",
+   "km": 144.2,
+   "minutes": 115
+  },
+  "LANGREO|LANGREO": {
+   "concejo": "LANGREO",
+   "localidad": "LANGREO",
+   "lat": 43.2872504,
+   "lon": -5.7007057,
+   "display_name": "Langreo, Asturias / Asturies, España",
+   "km": 34.6,
+   "minutes": 28
+  },
+  "LAVIANA|BARREDOS": {
+   "concejo": "LAVIANA",
+   "localidad": "BARREDOS",
+   "lat": 43.2598538,
+   "lon": -5.5750031,
+   "display_name": "Barredos, Calle de la Estación, Barredos, Tiraña, Laviana, Asturias / Asturies, 33970, España",
+   "km": 44.1,
+   "minutes": 35
+  },
+  "LAVIANA|CONDADO": {
+   "concejo": "LAVIANA",
+   "localidad": "CONDADO",
+   "lat": 43.2557075,
+   "lon": -5.4989288,
+   "display_name": "El Condao, Laviana, Asturias / Asturies, España",
+   "km": 54.9,
+   "minutes": 53
+  },
+  "LAVIANA|POLA DE LAVIANA": {
+   "concejo": "LAVIANA",
+   "localidad": "POLA DE LAVIANA",
+   "lat": 43.2508061,
+   "lon": -5.5648419,
+   "display_name": "Pola de Laviana, Avenida del Real Titanico, El Castrillón, La Pola Llaviana / Pola de Laviana, Laviana, Asturias / Asturies, 33980, España",
+   "km": 45.5,
+   "minutes": 36
+  },
+  "LENA|CAMPOMANES": {
+   "concejo": "LENA",
+   "localidad": "CAMPOMANES",
+   "lat": 43.1101208,
+   "lon": -5.8163998,
+   "display_name": "Campomanes, Calle de La Estación, Corneyana, Campumanes, Lena, Asturias / Asturies, 33620, España",
+   "km": 55.5,
+   "minutes": 39
+  },
+  "LENA|POLA DE LENA": {
+   "concejo": "LENA",
+   "localidad": "POLA DE LENA",
+   "lat": 43.1586493,
+   "lon": -5.8311261,
+   "display_name": "Pola de Lena, Calle Ramón y Cajal, La Estación, El Corraón, La Pola, Lena, Asturias / Asturies, 33630, España",
+   "km": 49.4,
+   "minutes": 35
+  },
+  "LLANERA|LUGO DE LLANERA": {
+   "concejo": "LLANERA",
+   "localidad": "LUGO DE LLANERA",
+   "lat": 43.442383,
+   "lon": -5.8158063,
+   "display_name": "Lugo de Llanera, Calle Asturias, Pondal, Llugo, Llanera, Asturias / Asturies, 33690, España",
+   "km": 20.0,
+   "minutes": 19
+  },
+  "LLANERA|POSADA": {
+   "concejo": "LLANERA",
+   "localidad": "POSADA",
+   "lat": 43.4401653,
+   "lon": -5.8513316,
+   "display_name": "Posada de Llanera, Llanera, Asturias / Asturies, 33424, España",
+   "km": 25.6,
+   "minutes": 21
+  },
+  "LLANERA|SAN CUCAO": {
+   "concejo": "LLANERA",
+   "localidad": "SAN CUCAO",
+   "lat": 43.433535,
+   "lon": -5.8922331,
+   "display_name": "San Cucao, Llanera, Asturias / Asturies, España",
+   "km": 29.4,
+   "minutes": 28
+  },
+  "LLANERA|TABLADIELLO": {
+   "concejo": "LLANERA",
+   "localidad": "TABLADIELLO",
+   "lat": 43.476155,
+   "lon": -5.797539,
+   "display_name": "Tabladiello, Villardebeyo, Llanera, Asturias / Asturies, 33480, España",
+   "km": 22.5,
+   "minutes": 24
+  },
+  "LLANES|LLANES": {
+   "concejo": "LLANES",
+   "localidad": "LLANES",
+   "lat": 43.4211205,
+   "lon": -4.7530835,
+   "display_name": "Llanes, Asturias / Asturies, España",
+   "km": 89.8,
+   "minutes": 67
+  },
+  "LLANES|NUEVA": {
+   "concejo": "LLANES",
+   "localidad": "NUEVA",
+   "lat": 43.4405078,
+   "lon": -4.9354305,
+   "display_name": "Nueva, Carretera de Ribadesella a Llanes, Urbanización La Barria, Obiu, Nueva, Llanes, Asturias / Asturies, 33592, España",
+   "km": 72.3,
+   "minutes": 54
+  },
+  "LLANES|POSADA": {
+   "concejo": "LLANES",
+   "localidad": "POSADA",
+   "lat": 43.4251216,
+   "lon": -4.8652086,
+   "display_name": "Posada, Avenida del Torrexón, Bricia, Posada, Llanes, Asturias / Asturies, 33594, España",
+   "km": 80.1,
+   "minutes": 58
+  },
+  "LLANES|VIBAÑO": {
+   "concejo": "LLANES",
+   "localidad": "VIBAÑO",
+   "lat": 43.3987842,
+   "lon": -4.8864877,
+   "display_name": "Vibañu, Llanes, Asturias / Asturies, España",
+   "km": 84.6,
+   "minutes": 69
+  },
+  "LLANES|VIDIAGO": {
+   "concejo": "LLANES",
+   "localidad": "VIDIAGO",
+   "lat": 43.3966266,
+   "lon": -4.6727699,
+   "display_name": "Vidiago, N-634, Riegu, Vidiago, Llanes, Asturias / Asturies, 33598, España",
+   "km": 95.0,
+   "minutes": 69
+  },
+  "MIERES|FIGAREDO": {
+   "concejo": "MIERES",
+   "localidad": "FIGAREDO",
+   "lat": 43.211118,
+   "lon": -5.7695507,
+   "display_name": "Figareo, Mieres, Asturias / Asturies, 33683, España",
+   "km": 45.2,
+   "minutes": 33
+  },
+  "MIERES|LINARES": {
+   "concejo": "MIERES",
+   "localidad": "LINARES",
+   "lat": 43.2150876,
+   "lon": -5.7323256,
+   "display_name": "Ḷḷinares, Turón, Mieres, Asturias / Asturies, 33610, España",
+   "km": 49.7,
+   "minutes": 41
+  },
+  "MIERES|MIERES": {
+   "concejo": "MIERES",
+   "localidad": "MIERES",
+   "lat": 43.2349957,
+   "lon": -5.769932,
+   "display_name": "Mieres, Asturias / Asturies, España",
+   "km": 41.1,
+   "minutes": 31
+  },
+  "MIERES|PEREDA(LA)": {
+   "concejo": "MIERES",
+   "localidad": "PEREDA(LA)",
+   "lat": 43.2770645,
+   "lon": -5.8123066,
+   "display_name": "La Pereda - Riosa, Carretera Gijón a Puerto de Sevilla, La Perea, Lloreo, Mieres, Asturias / Asturies, 33650, España",
+   "km": 40.7,
+   "minutes": 30
+  },
+  "MIERES|RIOTURBIO": {
+   "concejo": "MIERES",
+   "localidad": "RIOTURBIO",
+   "lat": 43.2642052,
+   "lon": -5.7402859,
+   "display_name": "Returbiu, Santa Rosa, Mieres, Asturias / Asturies, 33614, España",
+   "km": 41.0,
+   "minutes": 32
+  },
+  "MIERES|SANTULLANO": {
+   "concejo": "MIERES",
+   "localidad": "SANTULLANO",
+   "lat": 43.2208865,
+   "lon": -5.7854913,
+   "display_name": "Santuyano, MI-3 (Santuyano-Uxo), La Pedrera, Los Cuarteles del Maragatu, Santuyano, Mieres, Asturias / Asturies, 33683, España",
+   "km": 40.6,
+   "minutes": 32
+  },
+  "MIERES|UJO": {
+   "concejo": "MIERES",
+   "localidad": "UJO",
+   "lat": 43.2060953,
+   "lon": -5.792441,
+   "display_name": "Ujo, Barrio Viñuela, El Barrio La Estación, Barreo, Uxo, Mieres, Asturias / Asturies, 33640, España",
+   "km": 43.5,
+   "minutes": 31
+  },
+  "MIERES|VILLAPENDI": {
+   "concejo": "MIERES",
+   "localidad": "VILLAPENDI",
+   "lat": 43.2098681,
+   "lon": -5.7345481,
+   "display_name": "Viḷḷapindi / Villapendi, La Cabritera, Turón, Mieres, Asturias / Asturies, 33610, España",
+   "km": 48.6,
+   "minutes": 39
+  },
+  "MORCIN|LUGAR DE ABAJO": {
+   "concejo": "MORCIN",
+   "localidad": "LUGAR DE ABAJO",
+   "lat": 43.2531609,
+   "lon": -5.8724693,
+   "display_name": "Llugar de Baxo, La Foz, Morcín, Asturias / Asturies, 33162, España",
+   "km": 46.1,
+   "minutes": 35
+  },
+  "MUROS DE NALON|MUROS": {
+   "concejo": "MUROS DE NALON",
+   "localidad": "MUROS",
+   "lat": 43.5461507,
+   "lon": -6.1058904,
+   "display_name": "Muros, Muros de Nalón, Asturias / Asturies, 33138, España",
+   "km": 47.0,
+   "minutes": 34
+  },
+  "NAVA|CECEDA": {
+   "concejo": "NAVA",
+   "localidad": "CECEDA",
+   "lat": 43.3561673,
+   "lon": -5.4511067,
+   "display_name": "Ceceda, Carretera Irún - La Coruña, Ceceda / Cecea, Nava, Asturias / Asturies, 33520, España",
+   "km": 39.8,
+   "minutes": 32
+  },
+  "NAVA|NAVA": {
+   "concejo": "NAVA",
+   "localidad": "NAVA",
+   "lat": 43.3582544,
+   "lon": -5.5057607,
+   "display_name": "Nava, Asturias / Asturies, España",
+   "km": 34.8,
+   "minutes": 29
+  },
+  "NAVIA|NAVIA": {
+   "concejo": "NAVIA",
+   "localidad": "NAVIA",
+   "lat": 43.5275049,
+   "lon": -6.6755155,
+   "display_name": "Navia, Asturias / Asturies, España",
+   "km": 97.7,
+   "minutes": 70
+  },
+  "NAVIA|PUERTO DE VEGA": {
+   "concejo": "NAVIA",
+   "localidad": "PUERTO DE VEGA",
+   "lat": 43.5635519,
+   "lon": -6.6423986,
+   "display_name": "Puerto de Vega, Navia, Asturias / Asturies, España",
+   "km": 96.8,
+   "minutes": 67
+  },
+  "NOREÑA|NOREÑA": {
+   "concejo": "NOREÑA",
+   "localidad": "NOREÑA",
+   "lat": 43.3940202,
+   "lon": -5.7067183,
+   "display_name": "Noreña, Asturias / Asturies, 33180, España",
+   "km": 19.1,
+   "minutes": 17
+  },
+  "ONIS|BENIA DE ONIS": {
+   "concejo": "ONIS",
+   "localidad": "BENIA DE ONIS",
+   "lat": 43.3350208,
+   "lon": -4.9681463,
+   "display_name": "Benia de Onís, Onís, Asturias / Asturies, 33556, España",
+   "km": 98.2,
+   "minutes": 77
+  },
+  "OVIEDO|LATORES": {
+   "concejo": "OVIEDO",
+   "localidad": "LATORES",
+   "lat": 43.3346345,
+   "lon": -5.8874942,
+   "display_name": "Llatores, Oviedo, Asturias / Asturies, 33193, España",
+   "km": 37.7,
+   "minutes": 32
+  },
+  "OVIEDO|OLLONIEGO": {
+   "concejo": "OVIEDO",
+   "localidad": "OLLONIEGO",
+   "lat": 43.2961031,
+   "lon": -5.8188455,
+   "display_name": "Olloniego, Autovía Ruta de la Plata, La Estación, El Llugarón, Olloniego / Lluniego, Oviedo / Uviéu, Oviedo, Asturias / Asturies, 33660, España",
+   "km": 39.1,
+   "minutes": 32
+  },
+  "OVIEDO|OVIEDO": {
+   "concejo": "OVIEDO",
+   "localidad": "OVIEDO",
+   "lat": 43.3533452,
+   "lon": -5.8795096,
+   "display_name": "Oviedo, Asturias / Asturies, España",
+   "km": 31.5,
+   "minutes": 27
+  },
+  "OVIEDO|ROCES": {
+   "concejo": "OVIEDO",
+   "localidad": "ROCES",
+   "lat": 43.3779225,
+   "lon": -5.8019934,
+   "display_name": "Roces, Calle Zamora, La Iría, Colloto / Cualloto, Oviedo / Uviéu, Oviedo, Asturias / Asturies, 33429, España",
+   "km": 28.6,
+   "minutes": 23
+  },
+  "OVIEDO|SAN CLAUDIO": {
+   "concejo": "OVIEDO",
+   "localidad": "SAN CLAUDIO",
+   "lat": 43.3553156,
+   "lon": -5.9177948,
+   "display_name": "San Claudio, Carretera de la Estación, Ribero, San Claudio / San Cloyo, Oviedo / Uviéu, Oviedo, Asturias / Asturies, 33174, España",
+   "km": 39.4,
+   "minutes": 31
+  },
+  "OVIEDO|TRUBIA": {
+   "concejo": "OVIEDO",
+   "localidad": "TRUBIA",
+   "lat": 43.3485639,
+   "lon": -5.9675823,
+   "display_name": "Trubia, Camino del Molino, Junigro, El Gortayu, Trubia, Oviedo, Asturias / Asturies, 33100, España",
+   "km": 45.4,
+   "minutes": 37
+  },
+  "OVIEDO|TUDELA VEGUIN": {
+   "concejo": "OVIEDO",
+   "localidad": "TUDELA VEGUIN",
+   "lat": 43.3308981,
+   "lon": -5.7768255,
+   "display_name": "Tudela-Veguín, Calle Tino Casal, El Requexáu, Veguín, Oviedo, Asturias / Asturies, 33919, España",
+   "km": 33.2,
+   "minutes": 26
+  },
+  "PARRES|ARRIONDAS": {
+   "concejo": "PARRES",
+   "localidad": "ARRIONDAS",
+   "lat": 43.3875183,
+   "lon": -5.1882653,
+   "display_name": "Arriondas, Calle de Evaristo Valle, La Peruyal, Villa de la Peña / Villar de La Peñe, Arriondas / Les Arriondes, Parres, Asturias / Asturies, 33540, España",
+   "km": 64.9,
+   "minutes": 56
+  },
+  "PEÑAMELLERA BAJA|PANES": {
+   "concejo": "PEÑAMELLERA BAJA",
+   "localidad": "PANES",
+   "lat": 43.323424,
+   "lon": -4.583991,
+   "display_name": "Panes, Peñamellera Baja, Asturias / Asturies, España",
+   "km": 121.0,
+   "minutes": 86
+  },
+  "PILOÑA|INFIESTO": {
+   "concejo": "PILOÑA",
+   "localidad": "INFIESTO",
+   "lat": 43.3519084,
+   "lon": -5.3691634,
+   "display_name": "L'Infiestu, Avenida de La Cueva, El Calzáu, Infiesto / L'Infiestu, Piloña, Asturias / Asturies, 33530, España",
+   "km": 48.2,
+   "minutes": 41
+  },
+  "PILOÑA|SEVARES": {
+   "concejo": "PILOÑA",
+   "localidad": "SEVARES",
+   "lat": 43.3623925,
+   "lon": -5.2570968,
+   "display_name": "Sebares, Carretera Irún - La Coruña, Sebares, Piloña, Asturias / Asturies, 33583, España",
+   "km": 57.4,
+   "minutes": 48
+  },
+  "PILOÑA|VILLAMAYOR": {
+   "concejo": "PILOÑA",
+   "localidad": "VILLAMAYOR",
+   "lat": 43.3344933,
+   "lon": -5.2975767,
+   "display_name": "Villamayor, Piloña, Asturias / Asturies, 33583, España",
+   "km": 59.0,
+   "minutes": 56
+  },
+  "PRAVIA|PRAVIA": {
+   "concejo": "PRAVIA",
+   "localidad": "PRAVIA",
+   "lat": 43.4820904,
+   "lon": -6.1491535,
+   "display_name": "Pravia, Asturias / Asturies, 33120, España",
+   "km": 52.7,
+   "minutes": 46
+  },
+  "PRAVIA|SOMADO": {
+   "concejo": "PRAVIA",
+   "localidad": "SOMADO",
+   "lat": 43.5319044,
+   "lon": -6.1209374,
+   "display_name": "Somao, Pravia, Asturias / Asturies, España",
+   "km": 47.8,
+   "minutes": 36
+  },
+  "PROAZA|PROAZA": {
+   "concejo": "PROAZA",
+   "localidad": "PROAZA",
+   "lat": 43.2508048,
+   "lon": -6.0170071,
+   "display_name": "Proaza, Asturias / Asturies, España",
+   "km": 57.4,
+   "minutes": 52
+  },
+  "QUIROS|BARZANA": {
+   "concejo": "QUIROS",
+   "localidad": "BARZANA",
+   "lat": 43.1405293,
+   "lon": -6.0090261,
+   "display_name": "Bárzana, Quirós, Asturias / Asturies, España",
+   "km": 79.7,
+   "minutes": 119
+  },
+  "REGUERAS (LAS)|BIEDES": {
+   "concejo": "REGUERAS (LAS)",
+   "localidad": "BIEDES",
+   "lat": 43.4236653,
+   "lon": -5.9372999,
+   "display_name": "Biedes, Las Regueras, Asturias / Asturies, España",
+   "km": 34.5,
+   "minutes": 35
+  },
+  "REGUERAS (LAS)|SANTULLANO": {
+   "concejo": "REGUERAS (LAS)",
+   "localidad": "SANTULLANO",
+   "lat": 43.4143388,
+   "lon": -5.9689648,
+   "display_name": "Santuyanu, Las Regueras, Asturias / Asturies, 33190, España",
+   "km": 37.4,
+   "minutes": 39
+  },
+  "RIBADEDEVA|COLOMBRES": {
+   "concejo": "RIBADEDEVA",
+   "localidad": "COLOMBRES",
+   "lat": 43.3830117,
+   "lon": -4.5569884,
+   "display_name": "Colombres, Autovía del Cantábrico, El Peral, Colombres, Ribadedeva, Asturias / Asturies, 33590, España",
+   "km": 105.8,
+   "minutes": 75
+  },
+  "RIBADESELLA|RIBADESELLA": {
+   "concejo": "RIBADESELLA",
+   "localidad": "RIBADESELLA",
+   "lat": 43.4456557,
+   "lon": -5.0835484,
+   "display_name": "Ribadesella, Asturias / Asturies, España",
+   "km": 61.5,
+   "minutes": 52
+  },
+  "RIBERA DE ARRIBA|SOTO DE RIBERA": {
+   "concejo": "RIBERA DE ARRIBA",
+   "localidad": "SOTO DE RIBERA",
+   "lat": 43.3087843,
+   "lon": -5.8764676,
+   "display_name": "Soto Ribera, Ribera de Arriba, Asturias / Asturies, 33172, España",
+   "km": 37.8,
+   "minutes": 28
+  },
+  "RIOSA|ARA(LA)": {
+   "concejo": "RIOSA",
+   "localidad": "ARA(LA)",
+   "lat": 43.234643,
+   "lon": -5.8775972,
+   "display_name": "L'Ará, Riosa, Asturias / Asturies, 33160, España",
+   "km": 48.4,
+   "minutes": 38
+  },
+  "SALAS|CORNELLANA": {
+   "concejo": "SALAS",
+   "localidad": "CORNELLANA",
+   "lat": 43.4114514,
+   "lon": -6.1588049,
+   "display_name": "Corniana / Cornellana, Salas, Asturias / Asturies, 33850, España",
+   "km": 63.1,
+   "minutes": 46
+  },
+  "SALAS|ESPINA(LA)": {
+   "concejo": "SALAS",
+   "localidad": "ESPINA(LA)",
+   "lat": 43.4074275,
+   "lon": -6.3376936,
+   "display_name": "La Espina, Salas, Asturias / Asturies, 33891, España",
+   "km": 81.9,
+   "minutes": 60
+  },
+  "SALAS|SALAS": {
+   "concejo": "SALAS",
+   "localidad": "SALAS",
+   "lat": 43.4109448,
+   "lon": -6.2315688,
+   "display_name": "Salas, Asturias / Asturies, España",
+   "km": 69.3,
+   "minutes": 54
+  },
+  "SAN MARTIN DEL REY AURELIO|BLIMEA": {
+   "concejo": "SAN MARTIN DEL REY AURELIO",
+   "localidad": "BLIMEA",
+   "lat": 43.2708818,
+   "lon": -5.5903934,
+   "display_name": "Blimea, Estación de Blimea, El Portiellu, Blimea, Samartín del Rei Aurelio, Asturias / Asturies, 33960, España",
+   "km": 42.2,
+   "minutes": 34
+  },
+  "SAN MARTIN DEL REY AURELIO|ENTREGO(EL)": {
+   "concejo": "SAN MARTIN DEL REY AURELIO",
+   "localidad": "ENTREGO(EL)",
+   "lat": 43.28727,
+   "lon": -5.6446912,
+   "display_name": "L'Entregu / El Entrego, Calle Juan de la Cierva, El Japón, La Xuliana, San Andrés de Llinares, Samartín del Rei Aurelio, Asturias / Asturies, 33940, España",
+   "km": 36.5,
+   "minutes": 29
+  },
+  "SAN MARTIN DEL REY AURELIO|HUERIA(LA)": {
+   "concejo": "SAN MARTIN DEL REY AURELIO",
+   "localidad": "HUERIA(LA)",
+   "lat": 43.212524,
+   "lon": -5.643444,
+   "display_name": "La Güeria de Urbiés, La Vaḷḷicuerra, Urbiés, Mieres, Asturias / Asturies, España",
+   "km": 49.7,
+   "minutes": 50
+  },
+  "SAN MARTIN DEL REY AURELIO|SOTRONDIO": {
+   "concejo": "SAN MARTIN DEL REY AURELIO",
+   "localidad": "SOTRONDIO",
+   "lat": 43.276016,
+   "lon": -5.6048409,
+   "display_name": "Sotrondio, Calle Hernán Cortés, El Serrallo, La Venta, Samartín, Samartín del Rei Aurelio, Asturias / Asturies, 33950, España",
+   "km": 40.7,
+   "minutes": 32
+  },
+  "SANTA EULALIA DE OSCOS|SANTA EULALIA DE OSCOS": {
+   "concejo": "SANTA EULALIA DE OSCOS",
+   "localidad": "SANTA EULALIA DE OSCOS",
+   "lat": 43.2586817,
+   "lon": -7.0278744,
+   "display_name": "Santa Eulalia de Oscos, Asturias / Asturies, 33799, España",
+   "km": 166.6,
+   "minutes": 126
+  },
+  "SARIEGO|VEGA(LA)": {
+   "concejo": "SARIEGO",
+   "localidad": "VEGA(LA)",
+   "lat": 43.4105009,
+   "lon": -5.5563819,
+   "display_name": "Camín de la Quintana de Vega, Vega, Santiago, Sariego, Asturias / Asturies, 33518, España",
+   "km": 32.3,
+   "minutes": 27
+  },
+  "SIERO|BERRON(EL)": {
+   "concejo": "SIERO",
+   "localidad": "BERRON(EL)",
+   "lat": 43.3824364,
+   "lon": -5.7023757,
+   "display_name": "Estación de El Berrón;El Berrón, Estación de El Berrón, Barriu d'El Morralín, La Carrera, Siero, Asturias / Asturies, 33186, España",
+   "km": 20.1,
+   "minutes": 17
+  },
+  "SIERO|COTAYO(EL)": {
+   "concejo": "SIERO",
+   "localidad": "COTAYO(EL)",
+   "lat": 43.3436897,
+   "lon": -5.6359146,
+   "display_name": "Colegio Publico El Cotayo, Carretera de La Secada a Gargantada, Cardaño de Riba, El Cotoyu, Santiago Arenas / Carbayín, Siero, Asturias / Asturies, 33936, España",
+   "km": 28.6,
+   "minutes": 28
+  },
+  "SIERO|ESTACION": {
+   "concejo": "SIERO",
+   "localidad": "ESTACION",
+   "lat": 43.3828046,
+   "lon": -5.7025379,
+   "display_name": "Estación de El Berrón, Calle La Estación, Barriu d'El Morralín, La Carrera, Siero, Asturias / Asturies, 33186, España",
+   "km": 20.1,
+   "minutes": 17
+  },
+  "SIERO|FRESNEDA(LA)": {
+   "concejo": "SIERO",
+   "localidad": "FRESNEDA(LA)",
+   "lat": 43.4127423,
+   "lon": -5.7883375,
+   "display_name": "Urbanización La Fresneda, La Fresnera, Viella, Siero, Asturias / Asturies, 33429, España",
+   "km": 24.9,
+   "minutes": 21
+  },
+  "SIERO|GRANDA": {
+   "concejo": "SIERO",
+   "localidad": "GRANDA",
+   "lat": 43.3819846,
+   "lon": -5.7788649,
+   "display_name": "Granda, Siero, Asturias / Asturies, España",
+   "km": 26.6,
+   "minutes": 21
+  },
+  "SIERO|LUGONES": {
+   "concejo": "SIERO",
+   "localidad": "LUGONES",
+   "lat": 43.4043717,
+   "lon": -5.8121188,
+   "display_name": "Lugones, Accesos de la Estación, La Urba, El Carbayu, Lugones / Llugones, Siero, Asturias / Asturies, 33420, España",
+   "km": 24.7,
+   "minutes": 21
+  },
+  "SIERO|POLA DE SIERO(CAPITAL)": {
+   "concejo": "SIERO",
+   "localidad": "POLA DE SIERO(CAPITAL)",
+   "lat": 43.394024,
+   "lon": -5.6349173,
+   "display_name": "Siero, Asturias / Asturies, España",
+   "km": 21.9,
+   "minutes": 20
+  },
+  "SIERO|SOLVAY": {
+   "concejo": "SIERO",
+   "localidad": "SOLVAY",
+   "lat": 43.3710199,
+   "lon": -5.5778685,
+   "display_name": "Solvay, Lieres, Siero, Asturias / Asturies, 33518, España",
+   "km": 29.3,
+   "minutes": 24
+  },
+  "SIERO|URBANIZACION LA FRESNEDA": {
+   "concejo": "SIERO",
+   "localidad": "URBANIZACION LA FRESNEDA",
+   "lat": 43.4127423,
+   "lon": -5.7883375,
+   "display_name": "Urbanización La Fresneda, La Fresnera, Viella, Siero, Asturias / Asturies, 33429, España",
+   "km": 24.9,
+   "minutes": 21
+  },
+  "SIERO|VIELLA": {
+   "concejo": "SIERO",
+   "localidad": "VIELLA",
+   "lat": 43.4073407,
+   "lon": -5.7877722,
+   "display_name": "Viella, Siero, Asturias / Asturies, España",
+   "km": 25.1,
+   "minutes": 21
+  },
+  "SOMIEDO|POLA DE SOMIEDO": {
+   "concejo": "SOMIEDO",
+   "localidad": "POLA DE SOMIEDO",
+   "lat": 43.0931497,
+   "lon": -6.2572508,
+   "display_name": "La Pola Somiedo, Somiedo, Asturias / Asturies, 33840, España",
+   "km": 107.9,
+   "minutes": 96
+  },
+  "SOTO DEL BARCO|SAN JUAN DE LA ARENA": {
+   "concejo": "SOTO DEL BARCO",
+   "localidad": "SAN JUAN DE LA ARENA",
+   "lat": 43.5587707,
+   "lon": -6.0741475,
+   "display_name": "L'Arena, Soto del Barco, Asturias / Asturies, 33125, España",
+   "km": 44.9,
+   "minutes": 36
+  },
+  "SOTO DEL BARCO|SOTO": {
+   "concejo": "SOTO DEL BARCO",
+   "localidad": "SOTO",
+   "lat": 43.5290269,
+   "lon": -6.0714348,
+   "display_name": "Soto del Barco, Carretera Sotul Barcu - Corniana, El Parador, La Marrona, Sotu, Soto del Barco, Asturias / Asturies, 33126, España",
+   "km": 42.6,
+   "minutes": 31
+  },
+  "TAPIA DE CASARIEGO|TAPIA DE CASARIEGO": {
+   "concejo": "TAPIA DE CASARIEGO",
+   "localidad": "TAPIA DE CASARIEGO",
+   "lat": 43.5186397,
+   "lon": -6.9093998,
+   "display_name": "Tapia de Casariego, Asturias / Asturies, España",
+   "km": 120.9,
+   "minutes": 83
+  },
+  "TARAMUNDI|TARAMUNDI": {
+   "concejo": "TARAMUNDI",
+   "localidad": "TARAMUNDI",
+   "lat": 43.3631903,
+   "lon": -7.0777797,
+   "display_name": "Taramundi, Asturias / Asturies, 33775, España",
+   "km": 155.0,
+   "minutes": 134
+  },
+  "TEVERGA|PLAZA(LA) (CAPITAL)": {
+   "concejo": "TEVERGA",
+   "localidad": "PLAZA(LA) (CAPITAL)",
+   "lat": 43.1445043,
+   "lon": -6.1150972,
+   "display_name": "Teverga, Asturias / Asturies, 33111, España",
+   "km": 83.4,
+   "minutes": 103
+  },
+  "TINEO|GERA": {
+   "concejo": "TINEO",
+   "localidad": "GERA",
+   "lat": 43.3045544,
+   "lon": -6.4960762,
+   "display_name": "Xera, Samartín de Semproniana, Tineo, Asturias / Asturies, 33875, España",
+   "km": 103.8,
+   "minutes": 84
+  },
+  "TINEO|NAVELGAS": {
+   "concejo": "TINEO",
+   "localidad": "NAVELGAS",
+   "lat": 43.4104672,
+   "lon": -6.5686625,
+   "display_name": "Navelgas, Tineo, Asturias / Asturies, 33873, España",
+   "km": 110.9,
+   "minutes": 88
+  },
+  "TINEO|TINEO": {
+   "concejo": "TINEO",
+   "localidad": "TINEO",
+   "lat": 43.3092753,
+   "lon": -6.4919522,
+   "display_name": "Tineo, Asturias / Asturies, España",
+   "km": 102.6,
+   "minutes": 83
+  },
+  "VALDES|LUARCA": {
+   "concejo": "VALDES",
+   "localidad": "LUARCA",
+   "lat": 43.5359649,
+   "lon": -6.5265455,
+   "display_name": "Ḷḷuarca, Valdés, Asturias / Asturies, 33700, España",
+   "km": 83.2,
+   "minutes": 56
+  },
+  "VALDES|MOANES": {
+   "concejo": "VALDES",
+   "localidad": "MOANES",
+   "lat": 43.5258276,
+   "lon": -6.5696084,
+   "display_name": "Moanes, Santiagu, Valdés, Asturias / Asturies, 33792, España",
+   "km": 87.8,
+   "minutes": 60
+  },
+  "VALDES|TREVIAS": {
+   "concejo": "VALDES",
+   "localidad": "TREVIAS",
+   "lat": 43.5060089,
+   "lon": -6.4314696,
+   "display_name": "Trevías, Valdés, Asturias / Asturies, 33785, España",
+   "km": 78.3,
+   "minutes": 57
+  },
+  "VEGADEO|PIANTON": {
+   "concejo": "VEGADEO",
+   "localidad": "PIANTON",
+   "lat": 43.4330669,
+   "lon": -7.026444,
+   "display_name": "Piantón, Vegadeo, Asturias / Asturies, 33779, España",
+   "km": 139.2,
+   "minutes": 102
+  },
+  "VEGADEO|VEGADEO": {
+   "concejo": "VEGADEO",
+   "localidad": "VEGADEO",
+   "lat": 43.4154714,
+   "lon": -6.9992987,
+   "display_name": "Vegadeo, Asturias / Asturies, España",
+   "km": 144.6,
+   "minutes": 128
+  },
+  "VILLAVICIOSA|CASTIELLO": {
+   "concejo": "VILLAVICIOSA",
+   "localidad": "CASTIELLO",
+   "lat": 43.5100711,
+   "lon": -5.5084873,
+   "display_name": "Castiellu, Villaviciosa, Asturias / Asturies, 33314, España",
+   "km": 18.9,
+   "minutes": 18
+  },
+  "VILLAVICIOSA|VILLAVICIOSA": {
+   "concejo": "VILLAVICIOSA",
+   "localidad": "VILLAVICIOSA",
+   "lat": 43.4813776,
+   "lon": -5.4344978,
+   "display_name": "Villaviciosa, Asturias / Asturies, España",
+   "km": 27.3,
+   "minutes": 23
+  },
+  "VILLAYON|VILLAYON": {
+   "concejo": "VILLAYON",
+   "localidad": "VILLAYON",
+   "lat": 43.4086693,
+   "lon": -6.7003867,
+   "display_name": "Villayón, Asturias / Asturies, España",
+   "km": 124.3,
+   "minutes": 98
+  }
+ }
+}
